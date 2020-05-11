@@ -1,0 +1,14 @@
+<h1> The Words count in the sentence is : {{count}} </h1>
+
+<a href="{% url 'home' %}"> Start Again </a>
+
+<h1> And The sentence is : {{fulltext}} </h1>
+
+<h1> Words Frequency is listed below : </h1>
+
+{% for word,count in wordsfreq.items %}
+
+<h3> {{word}} - {{count}}</h3>
+
+{% endfor %}
+
